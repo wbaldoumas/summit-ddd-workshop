@@ -24,7 +24,7 @@ type AccountCreationSuccess {
     token: String!
 }
 
-union AccountCreationResponse : AccountCreationSuccess | AccountCreationFailure
+union AccountCreationResponse = AccountCreationSuccess | AccountCreationFailure
 
 type AccountCreationError implements Error {
     code: Int!
